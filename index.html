@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Calculator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Flight</h1>
     <p>Select your flight information to get to your destinaiton.</p>
 
+<div class="section1">
     <div>
         <label for="locations">From</label>
         <select name="from" id ="locations">
@@ -26,17 +28,21 @@
             <option value="sydney">Sydney</option>
         </select>
     </div>
+</div>
 
-    <div>    
+<div class="section2">
+    <div class="oneway">   
         <input type="radio" id="oneway" value="oneway">
-        <label for="oneway">One-way</label>
+        <label for="oneway">One way</label>
     </div>
 
-    <div>    
-        <input type="radio" id="retunr" value="oneway">
-        <label for="return">Return</label>
+    <div class="return">  
+        <input type="radio" id="return" value="oneway">
+        <label for="return">Return</label>  
     </div>
+</div>
 
+<div class="section3">
     <div>
         <label for="numberOfPeople">Number of people travelling:</label>
         <input type="number" id="numberOfPeople" name="numberOfPeople" min="1" step="1"> 
@@ -51,10 +57,12 @@
         <label for="numberOfTrips">How many times would this trip be taken (trip multiplier):</label>
         <input type="number" id="numberOfTrips" name="numberOfTrips" min="1" step="1"> 
     </div>
+</div>
 
     <h1>Destination Transport</h1>
     <p>How will travel at your destaniton each day.<br>Note that the below is for PER DAY.</p>
 
+<div class="section4">
     <div>
         <label for="typeOfRoadTransport">Type of Transport to be taken once at destination</label>
         <select name="typeOfRoadTransport" id ="typeOfRoadTransport">
@@ -69,6 +77,7 @@
         <label for="numberOfVehicles">Number of vehicles per trip (if applicable):</label>
         <input type="number" id="numberOfVehicles" name="numberOfVehicles" step="1"> 
     </div>
+</div>
 
 </body>
 </html>
